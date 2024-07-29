@@ -9,6 +9,7 @@
     background: var(--bg-color);
     color: var(--text-bg);
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 :root {
@@ -88,4 +89,14 @@
     left: 240px;
     font-size: 20px;
     letter-spacing: 1px;
+}
+
+.index-title h4{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    position: relative;
+    left: 400px;
 }
