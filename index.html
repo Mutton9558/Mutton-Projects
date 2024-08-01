@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="sakamoto_icon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/sakamoto_icon.png"/>
     <title>MuttonProjects</title>
 </head>
 <body>
     <div class="header-bar">
         <div class="header-logo">
-            <a href="index.html"><img src="sakamoto_icon.png"></a>
+            <a href="index.html"><img src="img/sakamoto_icon.png"></a>
             <h1>Mutton Projects</h1>
         </div>
         <div class="header-right">
@@ -24,5 +24,156 @@
         <h3>A site that documents all the projects run by: </h3>
         <h4><@Mutton9558></h4>
     </div>
+    <section class="index-section-1">
+        <div class="section-text">
+            <h1>Ongoing Projects</h1>
+        </div>
+        <div class="containers-cont">
+            <div class="index-cont-1">
+                <h2>coming soon</h2>
+                <div class="cont-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="index-cont-1">
+                <h2>coming soon</h2>
+                <div class="cont-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            <div class="index-cont-1">
+                <h2>coming soon</h2>
+                <div class="cont-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="button">
+        <button class="button-confetti">confetti</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <script>
+        const btn = document.querySelector(".button-confetti");
+        
+        btn.addEventListener("click", () =>{
+            confetti({
+                spread: 360,
+                ticks: 200,
+                gravity: 1,
+                decay: 0.94,
+                startVelocity: 30,
+                particleCount: 100,
+                scalar: 3,
+                shapes: ["image"],
+                shapeOptions: {
+                    image: [{
+                        src: "https://particles.js.org/images/fruits/apple.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/avocado.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/banana.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/berries.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/cherry.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/grapes.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/lemon.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/orange.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/peach.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/pear.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/pepper.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/plum.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/star.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/strawberry.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/watermelon.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    {
+                        src: "https://particles.js.org/images/fruits/watermelon_slice.png",
+                        width: 32,
+                        height: 32,
+                    },
+                    ],
+                },
+            });
+        })
+    </script>
+    <footer>
+        <div class="social">
+            <div class="social-item">
+                <a href="https://www.youtube.com/channel/UCGpizKINFEk5_E_WqQ2lQxg" class="youtube-icon"></a>
+            </div>
+            <div class="social-item">
+                <a href="https://twitter.com/Mutton9558" class="twitter-icon"></a>
+            </div>
+            <div class="social-item">
+                <a href="https://github.com/Mutton9558" class="github-icon"></a>
+            </div>
+        </div>
+        <div class="footer-text">
+            <div class="footer-icon">
+                <img src="img/sakamoto_icon.png">
+                <h4>Mutton Projects</h4>
+            </div>
+            <p>©Mutton9558 - All Rights Reserved</p>
+        </div>   
+    </footer>
+    <br>
 </body>
 </html>
