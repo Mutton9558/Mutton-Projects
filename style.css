@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-* {
+body {
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    padding-top: 6rem; /* Add padding equal to the height of the header */
+    height: 100vh;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -14,21 +16,25 @@
 
 :root {
     --text-bg: #e7f1f0;
-    --bg-color: #070d0d;
-    --primary: #a6d5d1;
-    --secondary: #30716c;
-    --accent: #6ac6be;
+    --bg-color: #23242a;
+    --primary: #526D82;
+    --secondary: #35374B;
+    --accent: #B9B4C7;
 }
 
 .header-bar {
     display: flex;
-    height: 8rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6rem;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0 20px;
+    padding: 20px 10px;
     z-index: 1000;
     overflow: hidden;
+    background: var(--bg-color);
 }
 
 .header-bar .header-logo, .header-bar .header-right {
@@ -70,7 +76,7 @@
     justify-content: center;
     align-items: center;
     display: grid;
-    margin-top: 30px;
+    margin: 50px auto;
 }
 
 .index-title h1{
@@ -99,4 +105,240 @@
     letter-spacing: 1px;
     position: relative;
     left: 400px;
+}
+
+.index-section-1 {
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+    border-bottom: none;
+    border-top: 3px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.index-section-1 .section-text{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 35s linear infinite;
+}
+
+@keyframes move{
+    to {
+        background-position: 4500vh;
+    }
+}
+
+.index-cont-1 {
+    background-color: rgba(146, 135, 236, 0.3);
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+    display: grid;
+    margin: 20px;
+    padding: 30px 5px;
+    width: 60vh;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    border: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px white;
+    transition: 0.4s;
+    cursor: default;
+    text-shadow: 0px 0px 5px black;
+}
+
+.index-cont-1::before {
+    content: ""; /* Creates an empty pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/images.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust opacity of the background image */
+    z-index: -1; /* Ensure it is behind the content */
+    transition: 0.2s ease;
+}
+
+.index-cont-1:hover::before {
+    transform: scale(1.1); /* Scale up the background image */
+}
+
+.index-cont-1:hover {
+    box-shadow: 0px 0px 20px white;
+}
+
+.containers-cont {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items if needed */
+}
+
+.index-cont-1:hover h2, .index-cont-1:hover .cont-text p{
+    color: #e8e6fb;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.index-cont-1:hover img{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.index-cont-1 h2{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-bg);
+    text-align: center;
+}
+
+.index-cont-1 .cont-text{
+    width: 40vh;
+    margin-bottom: 15px;
+}
+
+.index-cont-1 .cont-text p{
+    color: var(--accent);
+    text-align: center;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.index-cont-1 img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+.button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+
+.button-confetti{
+    background: white;
+    border-radius: 2px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px white;    
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-top: white 1px solid;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}   
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.footer-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-icon h4{
+    font-size: 24px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    padding: 0px 20px 0px 0px;
+}
+
+footer .social-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-item a{
+    text-decoration: none;
+    color: var(--text-bg);
+    font-size: 15px;
+    text-shadow: 0px 0px 2px white;
+}
+
+.twitter-icon{
+    width: 50px;
+    height: 50px;
+    background-image: url(img/twitter.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.twitter-icon:hover {
+    background-image: url('img/twitter-hover.png'); /* Change image on hover */
+}
+
+.youtube-icon{
+    width: 100px;
+    height: 100px;
+    background-image: url(img/youtube.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.youtube-icon:hover {
+    background-image: url('img/youtube-hover.png'); /* Change image on hover */
+}
+
+.github-icon{
+    width: 70px;
+    height: 70px;
+    background-image: url(img/github.png);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.github-icon:hover {
+    background-image: url('img/github-hover.png'); /* Change image on hover */
 }
