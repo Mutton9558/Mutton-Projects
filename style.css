@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0; 
     padding-top: 6rem; /* Add padding equal to the height of the header */
-    height: 100vh;
+    height: 100vh;  
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -31,14 +31,14 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     z-index: 1000;
     overflow: hidden;
     background: var(--bg-color);
 }
 
 .header-bar .header-logo, .header-bar .header-right {
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .header-bar .header-logo {
@@ -49,7 +49,7 @@ body {
 .header-bar .header-logo img {
     width: 20vh;
     height: 20vh;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .header-bar .header-logo h1 {
@@ -60,15 +60,15 @@ body {
 }
 
 .header-bar .header-right {
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .header-bar .header-right a {
     color: var(--text-bg);
     text-decoration: none;
-    margin: 0 30px;
+    margin: 0 1.875rem;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
 }   
 
 .index-title{
@@ -76,7 +76,8 @@ body {
     justify-content: center;
     align-items: center;
     display: grid;
-    margin: 50px auto;
+    margin: 3.125rem auto;
+    text-align: center;
 }
 
 .index-title h1{
@@ -84,17 +85,16 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 55px;
-    letter-spacing: 2px;
-    text-shadow: 0px 0px 30px white;
-    margin-bottom: 20px;
+    font-size: 3.438rem;
+    letter-spacing: 0.125rem;
+    text-shadow: 0px 0px 1.875rem white;
+    margin-bottom: 1.25rem;
 }
 
 .index-title h3{
     position: relative;
-    left: 240px;
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: 1.25rem;
+    letter-spacing: 0.063rem;
 }
 
 .index-title h4{
@@ -102,18 +102,17 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     position: relative;
-    left: 400px;
 }
 
 .index-section-1 {
-    margin: 20px auto;
-    padding: 20px;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
     width: 100%;
     box-sizing: border-box; /* Includes padding and border in width calculation */
     border-bottom: none;
-    border-top: 3px solid white;
+    border-top: 0.188rem solid white;
     border-left: none;
     border-right: none;
 }
@@ -122,14 +121,15 @@ body {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     display: flex;
     width: 100%;
-    margin: 10px;
+    margin: 0.625rem;
     justify-content: center;
     align-items: center;
-    letter-spacing: 2px;
+    text-align: center;
+    letter-spacing: 0.125rem;
     background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text;
     background-clip: text;
@@ -144,23 +144,23 @@ body {
 }
 
 .index-cont-1 {
-    background-color: rgba(146, 135, 236, 0.3);
+    background-color: rgba(146, 135, 236, 0.4);
     position: relative; /* Ensure the pseudo-element is positioned relative to this element */
     display: grid;
-    margin: 20px;
-    padding: 30px 5px;
+    margin: 1.25rem;
+    padding: 30px 0.313rem;
     width: 60vh;
     overflow: hidden;
     justify-items: center;
     align-items: center;
     border: white;
     border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px white;
+    border-width: 0.125rem;
+    border-radius: 0.313rem;
+    box-shadow: 0px 0px 0.625rem white;
     transition: 0.4s;
     cursor: default;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 0.313rem black;
 }
 
 .index-cont-1::before {
@@ -183,7 +183,7 @@ body {
 }
 
 .index-cont-1:hover {
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 1.25rem white;
 }
 
 .containers-cont {
@@ -213,52 +213,52 @@ body {
 
 .index-cont-1 .cont-text{
     width: 40vh;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 }
 
 .index-cont-1 .cont-text p{
     color: var(--accent);
     text-align: center;
-    font-size: 15px;
+    font-size: 0.938rem;
     text-align: justify;
 }
 
 .index-cont-1 img{
-    width: 250px;
-    height: 250px;
-    margin: 10px;
+    width: 15.625rem;
+    height: 15.625rem;
+    margin: 0.625rem;
 }
 
 .button{
     align-items: center;
     justify-content: center;
     display: flex;
-    margin: 10px;
+    margin: 0.625rem;
 }
 
 .button-confetti{
     background: white;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     color: black;
     font-weight: bold;
-    font-size: 20px;
-    padding: 8px;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin-bottom: 0.625rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0px 0px 10px white;    
+    box-shadow: 0px 0px 0.625rem white;    
 }
 
 footer{
     display: grid;
     justify-content: center;
     align-items: center;
-    border-top: white 1px solid;
+    border-top: white 0.063rem solid;
 }
 
 footer img{
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
 }   
 
 .footer-text{
@@ -266,7 +266,7 @@ footer img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 1.25rem;
 }
 
 .footer-icon{
@@ -276,9 +276,9 @@ footer img{
 }
 
 .footer-icon h4{
-    font-size: 24px;
-    margin-left: 20px;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin-left: 1.25rem;
+    letter-spacing: 0.125rem;
     font-weight: bold;
 }
 
@@ -288,25 +288,25 @@ footer .social {
     position: relative;
     align-items: center; /* Center items horizontally */
     justify-content: center;
-    padding: 0px 20px 0px 0px;
+    padding: 0px 1.25rem 0px 0px;
 }
 
 footer .social-item {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .social-item a{
     text-decoration: none;
     color: var(--text-bg);
-    font-size: 15px;
-    text-shadow: 0px 0px 2px white;
+    font-size: 0.938rem;
+    text-shadow: 0px 0px 0.125rem white;
 }
 
 .twitter-icon{
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     background-image: url(img/twitter.png);
     background-size: cover;
     background-position: center;
@@ -318,8 +318,8 @@ footer .social-item {
 }
 
 .youtube-icon{
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     background-image: url(img/youtube.png);
     background-size: cover;
     background-position: center;
@@ -331,8 +331,8 @@ footer .social-item {
 }
 
 .github-icon{
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     background-image: url(img/github.png);
     background-size: cover;
     background-position: center;
@@ -341,4 +341,40 @@ footer .social-item {
 
 .github-icon:hover {
     background-image: url('img/github-hover.png'); /* Change image on hover */
+}
+
+@media screen and (max-width: 56rem) {
+    .header-bar .header-right a {
+        display: flex;
+        flex-direction: column;
+        margin: 0.625rem;
+        padding: 0.625rem;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease;
+    }
+
+    .header-bar .header-right a:hover{
+        transform: scale(1.2);
+        text-shadow: 0px 0px 0.625rem white;
+        background-color: var(--primary);
+        border-radius: 0.313rem;
+    }
+    
+    .header-bar{
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    .index-title h1{
+        font-size: 2.5rem;
+    }
 }
