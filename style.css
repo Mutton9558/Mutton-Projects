@@ -61,15 +61,21 @@ body {
 
 .header-bar .header-right {
     padding: 0.625rem;
+    letter-spacing: 0.2ch;
 }
 
 .header-bar .header-right a {
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     color: var(--text-bg);
     text-decoration: none;
     margin: 0 1.875rem;
-    font-weight: 500;
-    font-size: 1.25rem;
+    font-weight: bold;
+    font-size: 2rem;
 }   
+
+.header-bar .header-right a:hover{
+    text-shadow: 0px 0px 0.2rem white;
+}
 
 .index-title{
     width: 100%;
@@ -150,13 +156,14 @@ body {
     margin: 1.25rem;
     padding: 30px 0.313rem;
     width: 60vh;
+    height: 50vh;
     overflow: hidden;
     justify-items: center;
     align-items: center;
     border: white;
     border-style: solid;
     border-width: 0.125rem;
-    border-radius: 0.313rem;
+    border-radius: 20px;
     box-shadow: 0px 0px 0.625rem white;
     transition: 0.4s;
     cursor: default;
@@ -191,6 +198,7 @@ body {
     flex-wrap: wrap; /* Wrap items if needed */
 }
 
+
 .index-cont-1:hover h2, .index-cont-1:hover .cont-text p{
     color: #e8e6fb;
     transition: 0.2s;
@@ -206,6 +214,7 @@ body {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 3rem;
     font-style: normal;
     color: var(--text-bg);
     text-align: center;
@@ -219,7 +228,7 @@ body {
 .index-cont-1 .cont-text p{
     color: var(--accent);
     text-align: center;
-    font-size: 0.938rem;
+    font-size:  1.2rem;
     text-align: justify;
 }
 
@@ -378,3 +387,79 @@ footer .social-item {
         font-size: 2.5rem;
     }
 }
+
+.faq-sec{
+    min-height:100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 2px white solid;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.faq-title{
+    width: 100%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+.faq-title h1{
+    text-shadow: 0px 0px 0.125rem white;
+}
+
+.faq{
+    width: 80%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.faq .questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2ch;
+}
+
+.faq .questions h3{
+    font-size: 2.2rem;
+    letter-spacing: 0.2ch;
+}
+
+.faq .answer{
+    margin-left: 2ch;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in;
+}
+
+.faq.active .answer{
+    max-height: 300px;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+.faq .answer p{
+    font-size: 1.4rem;
+    line-height: 2.4ch;
+}
+
